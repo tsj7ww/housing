@@ -10,8 +10,8 @@ Regression modeling and ML project on [Kaggle](https://www.kaggle.com/competitio
 
 #### Algorithms
 I use an ensemble of 3 different models to generate final sales price prediction:
-- Gradient Boosted Regression (GBDT)
-- Linear Regression
+- Gradient Boosted Decision Tree (GBDT)
+- Ridge Regression
 - K-Nearest Neighbors
 
 #### Features
