@@ -27,7 +27,7 @@ I break features down into 5 main categories: target, house, lot, location, and 
 1. `Dummy` - create dummy variables for categorical fields
 1. `Select` - feature selection
 1. `Normalize` - normalize numerical data fields
-1. `Wrange` - wrangle data into fit, score, and test sets
+1. `Wrangle` - wrangle data into fit, score, and test sets
 
 #### 2. Modeling (currently Prediction)
 
