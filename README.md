@@ -35,4 +35,4 @@ I break features down into 5 main categories: target, house, lot, location, and 
 1. `Gradient Boosted Decision Tree Regression (gbr)`
 1. `Ridge Regression (ridge)`
 1. `K-Nearest Neighbor Regression (knn)`
-1. `Predict` - predict target variable for test data
+1. `Predict` - predict target variable for test data using an ensemble of previously stated models and taking the average output
