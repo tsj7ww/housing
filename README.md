@@ -15,4 +15,4 @@ I use an ensemble of 3 different models to generate final sales price prediction
 - K-Nearest Neighbors
 
 #### Features
-I break features down into 5 main categories: target, house, lot, location, and sale. I pull features directly from the [features.md file](./features.md) in order to ensure accuracy in the documentation. Refer to the file for more information of features used and their definitions.
+I break features down into 5 main categories: target, house, lot, location, and sale. I pull features directly from the [features.md file](./features.md) in order to ensure accuracy of the documentation. Refer to the file for more information of features used and their definitions.
