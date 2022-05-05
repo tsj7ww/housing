@@ -3,10 +3,6 @@ SalePrice:
     topic: target
     dtype: target
     definition: n/a
-Segment:
-    topic: target
-    dtype: target
-    definition: n/a
 # House
 MSSubClass:
     topic: house
