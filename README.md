@@ -9,30 +9,48 @@ Regression modeling and ML project on [Kaggle](https://www.kaggle.com/competitio
 ## Model
 
 #### Algorithms
-I use an ensemble of 3 different models to generate final sales price prediction:
-- Gradient Boosted Decision Tree (GBDT)
+I use an average ensemble of 4 different models to generate final sales price prediction:
+- Gradient Boosted Decision Tree
 - Ridge Regression
 - K-Nearest Neighbors
+- XGBoost
 
 #### Features
-I break features down into 5 main categories: target, house, lot, location, and sale. I pull features directly from the [features.yml file](./features.yml) in order to ensure accuracy of the documentation. Refer to the file for more information on features used and their definitions.
+I break features down into 5 main categories: house, lot, location, and sale. I pull features directly from the [features.yml file](./features.yml). Refer to the file for more info on features used and their definitions.
 
 ## Methodology
 
 #### 1. Preprocessing
 
 ###### Steps
-1. `Combine` - combine train and test sets for data preprocessing
-1. `Clean` - clean data
+1. `Clean` - clean data, handle null values
 1. `Dummy` - create dummy variables for categorical fields
-1. `Select` - feature selection
 1. `Normalize` - normalize numerical data fields
-1. `Wrangle` - wrangle data into fit, score, and test sets
+1. `Select` - feature selection
+1. `Split` - split training into fit and score sets
 
-#### 2. Modeling (currently Prediction)
+#### 2. Modeling
 
 ###### Steps
-1. `Gradient Boosted Decision Tree Regression (gbr)`
-1. `Ridge Regression (ridge)`
-1. `K-Nearest Neighbor Regression (knn)`
-1. `Predict` - predict target variable for test data using an ensemble of previously stated models and taking the average output
+1. Select model type
+    - `Gradient Boosted Decision Tree Regression (gbr)`
+    - `Ridge Regression (ridge)`
+    - `K-Nearest Neighbor Regression (knn)`
+1. `Tune`
+    1. Iterate through model parameter combinations
+    1. Select model with best correlation coefficient
+1. `Predict` - predict target variable for test data using best performing model
+
+## Components
+
+#### Data Manipulation
+The numerical data is normalized using a standard scaler and dummy variables are created for categorical fields.
+
+#### Feature Engineering & Selection
+Feature Engineering: interaction terms
+
+Feature Selection: backward selection
+
+
+#### Modeling
+Grid search CV (cross-validation)

@@ -1,8 +1,9 @@
 # Target
-SalePrice:
+Target:
     topic: target
     dtype: target
     definition: n/a
+    field_name: SalePrice
 # House
 MSSubClass:
     topic: house
