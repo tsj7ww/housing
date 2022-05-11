@@ -33,14 +33,6 @@ YearBuilt:
     topic: house
     dtype: cat
     definition: n/a
-YearRemodAdd:
-    topic: house
-    dtype: int
-    definition: n/a
-RoofStyle:
-    topic: house
-    dtype: cat
-    definition: n/a
 Exterior1st:
     topic: house
     dtype: cat
@@ -60,26 +52,6 @@ ExterCond:
 Foundation:
     topic: house
     dtype: cat
-    definition: n/a
-BsmtQual:
-    topic: house
-    dtype: cat
-    definition: n/a
-BsmtCond:
-    topic: house
-    dtype: cat
-    definition: n/a
-BsmtExposure:
-    topic: house
-    dtype: cat
-    definition: n/a
-BsmtFinType1:
-    topic: house
-    dtype: cat
-    definition: n/a
-BsmtFinSF1:
-    topic: house
-    dtype: int
     definition: n/a
 Heating:
     topic: house
@@ -101,26 +73,6 @@ Electrical:
     topic: house
     dtype: int
     definition: n/a
-FullBath:
-    topic: house
-    dtype: cat
-    definition: n/a
-HalfBath:
-    topic: house
-    dtype: cat
-    definition: n/a
-KitchenQual:
-    topic: house
-    dtype: cat
-    definition: n/a
-Functional:
-    topic: house
-    dtype: cat
-    definition: n/a
-MiscVal:
-    topic: house
-    dtype: int
-    definition: n/a
 SaleCondition:
     topic: house
     dtype: cat
@@ -134,35 +86,11 @@ Neighborhood:
     topic: location
     dtype: cat
     definition: n/a
-Condition1:
-    topic: location
-    dtype: cat
-    definition: n/a
-Condition2:
-    topic: location
-    dtype: cat
-    definition: n/a
 # Lot
 LotArea:
     topic: lot
     dtype: int
     definition: Lot size in square feet
-Street:
-    topic: lot
-    dtype: cat
-    definition: Type of road access to property
-LandContour:
-    topic: lot
-    dtype: cat
-    definition: n/a
-LotConfig:
-    topic: lot
-    dtype: cat
-    definition: n/a
-LandSlope:
-    topic: lot
-    dtype: cat
-    definition: n/a
 # Sale
 SaleType:
     topic: sale
